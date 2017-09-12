@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- <?xml-stylesheet type="text/xsl" href="xsl/functions.xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="xsl/controles.xsl"?> -->
+<?xml-stylesheet type="text/xsl" href="xsl/xpath.xsl"?>
+<!-- <?xml-stylesheet type="text/xsl" href="xsl/templates.xsl"?> -->
+<!-- test -->
+
+<!-- <!DOCTYPE comics SYSTEM "dtd/comics.dtd"> -->
+<!-- <comics> -->
+
+<comics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:noNamespaceSchemaLocation="xsd/comics.xsd">
+
+	<genres>
+		<genre num="g1" nom="Disney" />
+		<genre num="g2" nom="DC Comics" />
+		<genre num="g3" nom="Marvel" />
+	</genres>
+	
+	<personnage pk="p1" fk_genre="g1">
+		<prenom>Minerva</prenom>
+		<nom>Mouse</nom>
+		<aka>Minnie</aka>
+		<ddn>1928-11-18</ddn>
+	</personnage>
+	
+	<personnage pk="p2" fk_genre="g1">
+		<prenom>Mickey</prenom>
+		<nom>Mouse</nom>
+		<ddn>1928-11-18</ddn>
+	</personnage>
+	
+	<personnage pk="p3" fk_genre="g2">
+		<prenom>Clark</prenom>
+		<nom>Kent</nom>
+		<aka>Superman</aka>
+		<ddn>1938-06-01</ddn>
+	</personnage>
+
+	<personnage pk="p4" fk_genre="g2">
+		<prenom>Bruce</prenom>
+		<nom>Wayne</nom>
+		<aka>Batman</aka>
+		<ddn>1939-05-01</ddn>
+	</personnage>
+	
+	<personnage pk="p5">
+		<prenom>Betty</prenom>
+		<nom>Boop</nom>
+		<ddn>1930-08-09</ddn>
+	</personnage>
+	
+	<aventures>
+		<aventure protagonistes="p3 p4">
+			<titre>The Mightiest Team in the World</titre>
+			<prix>100</prix>
+		</aventure>
+		<aventure protagonistes="p3 p4">
+			<titre>Justice League Adventures</titre>
+			<prix>200</prix>
+		</aventure>
+		<aventure protagonistes="p1 p2">
+			<titre>Steamboat Willie</titre>
+			<prix>300</prix>
+		</aventure>				
+	</aventures>	
+
+</comics>
+
+
+
+
+
+
